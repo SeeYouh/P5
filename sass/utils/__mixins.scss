@@ -1,0 +1,40 @@
+@mixin fl-direc-row {
+    flex-direction: row;
+}
+
+@mixin fl-direc-column {
+    flex-direction: column;
+}
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin disp-flex {
+    display: flex;
+}
+
+@mixin just-ar {
+    justify-content: space-around;
+}
+
+@mixin disp-row-center {
+    @include disp-flex;
+    @include fl-direc-row;
+    @include center
+}
+
+@mixin disp-row-spacear {
+    @include disp-flex;
+    @include fl-direc-row;
+    @include just-ar
+}
+
+@mixin border-Logo {
+    border: 1px solid $bgcolormenu;
+}
+
+@mixin bg-logo {
+    background-color: $bgcolorbar;
+}

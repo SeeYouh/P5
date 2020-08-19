@@ -1,0 +1,48 @@
+.bg {
+    display: grid;
+    grid-template-columns: 280px 1fr 150px 100px;
+    align-items: center;
+}
+
+/* Logo */
+
+.logo {
+    margin: 15px 0 5px 50px;
+}
+
+/* Barre de recherche */
+
+.search {
+    @include disp-row-center;
+    input, button {
+        @include border-Logo;
+        height: 35px;
+    }
+    input {
+        font-size: 1rem;
+        color: $colorfontbar;
+        padding-left: 10px;
+        border-right-color: $bgcolorbar;
+    }
+    button {
+        @include bg-logo;
+        border-left-color: $bgcolorbar;
+        .fa-search {
+            color: $bgcolormenu;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+/* Mon compte & Panier */
+
+.fa-user, .fa-shopping-cart {
+    margin-right: 10px;
+}
+
+.bar-menu {
+    @include disp-row-spacear;
+    align-items: center;
+    height: 40px;
+    background-color: $bgcolormenu;
+}

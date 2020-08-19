@@ -1,0 +1,32 @@
+footer {
+    background-color: $bgcolormenu;
+}
+
+.fontfooter {
+    color: $colorfontfooter;
+}
+
+.footer1, .text-lien {
+    //background-color: #000;
+    @include disp-row-spacear;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.footer1 {
+    height: 80px;
+}
+
+.text-lien {
+    height: auto;
+}
+
+.rejoindre {
+    @include disp-row-center;
+    p, i {
+        margin: 10px;
+    }
+    i {
+        font-size: $medium;
+    }
+}

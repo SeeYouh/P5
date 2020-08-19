@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">     <script src="https://kit.fontawesome.com/d8f0543d7d.js" crossorigin="anonymous"></script>
+    <title>Orinoco</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="bg">
+            <a href="./index.html" class="logo">
+                <img src="./images/Logo Orinoco.png" alt="Logo d'Orinoco">
+            </a>
+            <div class="search">
+                <input type="search" name="search" class="border-cologo dimen-calcwidth85 search" placeholder="Quel est votre envie ?">
+                <button type="submit" class="dimen-width-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <a href="#" class="compte fl-direc-row justalign-center">
+                <i class="far fa-user text-xs-medium pos-rel-bot-small"></i>
+                <div class="text-compte">
+                    <p>Mon compte</p>
+                    <p class="text-s-small pos-rel-bot-large">Identifiez-vous</p>
+                </div>  
+            </a>
+            <a href="#" class="panier fl-direc-row justalign-center">
+                <i class="fas fa-shopping-cart text-xs-medium pos-rel-bot-small"></i>
+                <div class="text-panier">
+                    <p>Panier</p> 
+                    <p class="text-s-small article pos-rel-bot-large">
+                        <span class="number-article">0</span>
+                        article
+                    </p>
+                </div>
+            </a>
+        </nav>
+        <nav>
+            <ul class="bar-menu">
+                <li class="menu-produit">
+                    <a href="#">
+                        Jouets
+                    </a>
+                </li>
+                <li class="menu-produit">
+                    <a href="#">
+                        Caméras
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </li>
+                <li class="menu-produit">
+                    <a href="#">
+                        Meubles 
+                    </a>
+                </li>
+            </ul>
+        </nav>
+</header>
+<main class="article-produit" >
+
+    <div class="item-furniture">
+        <img src="./images/oak_1.jpg" alt="">
+        <div class="title">Oak 1</div>
+        <div class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta doloribus earum harum commodi voluptatem asperiores. Saepe placeat fuga culpa quisquam sed, maiores laboriosam aliquam suscipit, praesentium nostrum nesciunt consectetur accusantium!</div>
+        <div class="shopping">
+            <div class="qty">
+                <div class="signe moins">-</div>
+                <div class="number">1</div>
+                <div class="signe plus">+</div>
+            </div>
+            <a href="#">
+                <div class="shop">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p class="add">ajouter</p>
+                </div>
+            </a>
+            <div class="price">
+                <p>199.90€</p>
+            </div>
+        </div>
+    </div>
+    <div class="item-toys">
+        <img src="./images/teddy_1.jpg" alt="">
+        <div class="title">Teddy 1</div>
+        <div class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta doloribus earum harum commodi voluptatem asperiores. Saepe placeat fuga culpa quisquam sed, maiores laboriosam aliquam suscipit, praesentium nostrum nesciunt consectetur accusantium!</div>
+        <div class="shopping">
+            <div class="qty">
+                <div class="signe moins">-</div>
+                <div class="number">1</div>
+                <div class="signe plus">+</div>
+            </div>
+            <div class="shop">
+                <i class="fas fa-shopping-cart"></i>
+                <p class="add">ajouter</p>
+            </div>
+            <div class="price">
+                <p>199.90€</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer class="footer">
+    <div class="footer1">
+        <div class="rejoindre">
+            <p class="fontfooter">Rejoignez-nous : </p>
+            <i class="fab fa-facebook-square fontfooter"></i>
+            <i class="fab fa-instagram-square fontfooter"></i>
+            <i class="fab fa-pinterest-square fontfooter"></i>
+            <i class="fab fa-twitter-square fontfooter"></i>
+        </div>
+        <div class="newsletter">
+            <p class="text-newsletter fontfooter">
+                Inscrivez-vous à notre newsletter
+            </p>
+            <input type="mail" name="newsletter" class="border-cologo" placeholder="Saisissez votre e-mail.">
+            <button type="submit" class="bg-btn border-cologo">ok</button>
+        </div>
+    </div>
+    <div class="text-lien">
+        <a href="#"class="bg-footer fontfooter">Mentions légales</a>
+        <a href="#"class="bg-footer fontfooter">Qui sommes-nous</a>
+        <a href="#"class="bg-footer fontfooter">Plan du site</a>
+    </div>
+</footer>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@each $name, $size in $list-size {
+    .text-#{$name} {
+        font-size: $size;
+    }
+}
+
+@each $name, $width in $list-width {
+    .dimen-#{$name} {
+        width: $width;
+    }
+}
+
+@each $name, $heigth in $list-heigth {
+    .dimen-#{$name} {
+        height: $heigth;
+    }
+}
+
+@each $name, $position in $list-posrel {
+    .pos-rel-bot-#{$name} {
+        position: relative;
+        bottom: $position;
+    }
+}
+
+@each $name, $cat in $list-item {
+    .item-#{$name} {
+        background-color: $cat;
+        width: 400px;
+        height: 600px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img {
+            margin: 20px;
+            border: 1px solid $bgcolorlogo;
+        }
+        .title {
+            padding-left: 20px;
+            font-size: $title;
+        }
+        .summary {
+            font-size: $summary;
+            text-align: justify;
+            padding: 0 20px 0 20px;
+        }
+        .shopping {
+            @include disp-row-spacear;
+            align-items: center;
+            padding-bottom: 10px;
+            .qty, .signe, .number, .fa-shopping-cart, .add, .price, .shop {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .number, .add, .price {
+                font-weight: 700;
+            }
+            .number, .shop {
+                background-color: $bgcolorbar;
+            }
+            .qty {
+                justify-content: space-between;
+                border: $bgcolorlogo;
+                width: 100px;
+                height: 30px;
+
+                .signe {
+                    background-color: $bgcolorbtnqte;
+                    width: 50px;
+                    height: 30px;
+                    font-size: $signe;
+                    color: $bgcolorbar;
+                }
+                .number {
+                    width: 100%;
+                    height: 100%;
+                    font-size: $qty;
+                }
+            }
+            .shop {
+                width: 150px;
+                height: 30px;
+                .add {
+                    padding-left: 10px;
+                    text-transform: uppercase;
+                }
+            }
+            .price p {
+                color: $bgcolorlogo;
+                font-size: 1.5em;
+            }
+            .shop, .qty {
+                border: 1px solid $bgcolorlogo;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.fl-direc-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.fl-direc-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justalign-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.fl-justicontent {
+    justify-content: space-between;
+}

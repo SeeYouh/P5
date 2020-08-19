@@ -1,0 +1,106 @@
+/* Background color */
+
+$bgcolor :       #fdfbfd;
+$bgcolorbar :    #fffdff;
+$bgcolorlogo :   #8f5bfe;
+$bgcolorlogo2 :  #e88d08;
+$bgcolormenu :   #f3e9f1;
+$bgcolorbtnqte : #ded5dd;
+
+/* Couleurs polices d'écriture */
+
+$colorfont :       black;
+$colorfontbar :    #ded5dd;
+$colorfontfooter : #b1aab0;
+
+/* Size */
+
+$xs-small : .5em;
+$s-small :  .6em;
+$small :     1em;
+$xs-medium: 1.1em;
+$medium :    2em;
+$large :     4em;
+$xl-large :  8em;
+
+$list-size : (
+    "xs-small" : $xs-small,
+    "s-small" :  $s-small,
+    "small" :    $small,
+    "xs-medium": $xs-medium,
+    "medium" :   $medium,
+    "large" :    $large,
+    "xl-large" : $xl-large
+);
+
+/* Width */
+
+$width-btn : 35px;
+$width-full : 100%;
+$widthmedium : 500px;
+$width-large : 600px;
+$width-xl-large : 900px;
+$calcwidth85px : calc(100% - 50px);
+
+$list-width : (
+    "width-btn" : $width-btn,
+    "widthfull" : $width-full,
+    "widthcinqcentpx" : $widthmedium,
+    "large-width" : $width-large,
+    "xl-large-width" : $width-xl-large,
+    "calcwidth85" : $calcwidth85px
+);
+
+/* Heigth */
+
+$heigth-full : 100%;
+$heigth-75 : 75%;
+$heigthmedium : 500px;
+$heigth-large : 600px;
+$heigth-xl-large : 900px;
+$calcheigth85px : calc(100% - 50px);
+
+$list-heigth : (
+    "heigthfull" : $heigth-full,
+    "height-75" : $heigth-75,
+    "heigthcinqcentpx" : $heigthmedium,
+    "large-heigth" : $heigth-large,
+    "xl-large-heigth" : $heigth-xl-large,
+    "calcheigth85" : $calcheigth85px
+);
+
+/* Position relative */
+
+$pos-small: 4px;
+$pos-medium: 8px;
+$pos-large:10px;
+
+$list-posrel : (
+    "small" : $pos-small,
+    "medium" : $pos-medium,
+    "large" : $pos-medium
+);
+
+        /* Article */
+
+/* Font-size */
+
+$title: 2em;
+$summary: 1em;
+$qty: 1.3em;
+$price: 2em;
+$shop: 2em;
+$signe: 2em;
+$logo-shop: 2em;
+
+/* Background-color */
+
+$bg-cat-toys: #dcf3de;
+$bg-cat-furniture: #f3dcee;
+$bg-cat-photo: #f3e9f1;
+
+$list-item : (
+    "toys" : $bg-cat-toys,
+    "furniture" : $bg-cat-furniture,
+    "photo" : $bg-cat-photo
+);
