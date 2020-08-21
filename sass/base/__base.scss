@@ -22,7 +22,10 @@ footer,
 }
 
 input, button {
-    cursor: pointer;
     background-color: $bgcolorbar;
     border: 1px solid $bgcolormenu;
+}
+
+button {
+    cursor: pointer;
 }
