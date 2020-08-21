@@ -1,4 +1,5 @@
 .article-produit {
-    @include disp-row-center;
-
+    width: 100%;
+    min-width: 1024px;
+    min-height: 710px;
 }

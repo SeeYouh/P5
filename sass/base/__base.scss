@@ -1,0 +1,28 @@
+.menu-produit, 
+footer, 
+.rejoindre, 
+.article-produit, 
+.user, 
+.search,
+.mail-bar,
+.ok-btn-mail {
+    @include disp-row-center;
+}
+
+.bar-menu, 
+.footer1,
+.shopping, 
+.text-lien {
+    @include disp-row-spacear;
+}
+
+footer, 
+.bar-menu {
+    background-color: $bgcolormenu;
+}
+
+input, button {
+    cursor: pointer;
+    background-color: $bgcolorbar;
+    border: 1px solid $bgcolormenu;
+}

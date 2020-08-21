@@ -1,5 +1,5 @@
-footer {
-    background-color: $bgcolormenu;
+.footer {
+    min-width: 1024px;
 }
 
 .fontfooter {
@@ -7,8 +7,6 @@ footer {
 }
 
 .footer1, .text-lien {
-    //background-color: #000;
-    @include disp-row-spacear;
     margin-top: 10px;
     align-items: center;
 }
@@ -22,7 +20,6 @@ footer {
 }
 
 .rejoindre {
-    @include disp-row-center;
     p, i {
         margin: 10px;
     }

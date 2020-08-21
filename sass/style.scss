@@ -1,12 +1,12 @@
 @import "./utils/_variables",
         "./utils/_mixins",
-        "./utils/_eachs",
-        "./utils/_flex";
+        "./utils/_eachs";
 
 @import "./base/_body",
         "./base/_fonts",
         "./base/_footers",
         "./base/_main",
+        "./base/_base",
         "./base/_header";
 
 @import "./components/_mail-bar",

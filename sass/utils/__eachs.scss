@@ -46,7 +46,6 @@
             padding: 0 20px 0 20px;
         }
         .shopping {
-            @include disp-row-spacear;
             align-items: center;
             padding-bottom: 10px;
             .qty, .signe, .number, .fa-shopping-cart, .add, .price, .shop {
@@ -96,5 +95,8 @@
                 border: 1px solid $bgcolorlogo;
             }
         }
+        .title, .signe, .shop {
+            cursor: pointer;
+        }    
     }
 }

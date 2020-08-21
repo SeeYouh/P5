@@ -1,37 +1,7 @@
-.bg {
-    display: grid;
-    grid-template-columns: 280px 1fr 150px 100px;
-    align-items: center;
-}
-
 /* Logo */
 
 .logo {
     margin: 15px 0 5px 50px;
-}
-
-/* Barre de recherche */
-
-.search {
-    @include disp-row-center;
-    input, button {
-        @include border-Logo;
-        height: 35px;
-    }
-    input {
-        font-size: 1rem;
-        color: $colorfontbar;
-        padding-left: 10px;
-        border-right-color: $bgcolorbar;
-    }
-    button {
-        @include bg-logo;
-        border-left-color: $bgcolorbar;
-        .fa-search {
-            color: $bgcolormenu;
-            font-size: 1.4rem;
-        }
-    }
 }
 
 /* Mon compte & Panier */
@@ -40,9 +10,23 @@
     margin-right: 10px;
 }
 
+/* Menu catégorie produit */
+
 .bar-menu {
-    @include disp-row-spacear;
     align-items: center;
+    width: 100%;
     height: 40px;
-    background-color: $bgcolormenu;
+    li {
+        cursor: pointer;
+        background-color: $bgcolormenu;
+        transition: background-color .5s ;
+    }
+    li:hover {
+        background-color: $bgcolormenuhover;
+    }
+}
+
+.menu-produit {
+    width: 100%;
+    height: 40px;
 }

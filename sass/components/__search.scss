@@ -1,0 +1,18 @@
+.search {
+    input, button {
+        height: 35px;
+    }
+     input {
+        font-size: 1rem;
+        color: $colorfontbar;
+        padding-left: 10px;
+        border-right-color: $bgcolorbar;
+    }
+    button {
+        border-left-color: $bgcolorbar;
+        .fa-search {
+            color: $bgcolormenu;
+            font-size: 1.4rem;
+        }
+    }
+ }
