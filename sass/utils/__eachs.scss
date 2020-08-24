@@ -49,16 +49,16 @@
         .shopping {
             align-items: center;
             padding-bottom: 10px;
-            .qty, .signe, .number, .fa-shopping-cart, .add, .price, .shop {
+            .qty, .signe, .number-article, .fa-shopping-cart, .add, .price, .shop {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
             }
-            .number, .add, .price {
+            .number-article, .add, .price {
                 font-weight: 700;
             }
-            .number, .shop {
+            .number-article, .shop {
                 background-color: $bgcolorbar;
             }
             .qty {
@@ -74,7 +74,7 @@
                     font-size: $signe;
                     color: $bgcolorbar;
                 }
-                .number {
+                .number-article {
                     width: 100%;
                     height: 100%;
                     font-size: $qty;
