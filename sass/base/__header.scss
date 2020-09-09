@@ -2,6 +2,10 @@
 
 .logo {
     margin: 15px 0 5px 50px;
+    img {
+        width: 200px;
+        height: auto;
+    }
 }
 
 /* Mon compte & Panier */
@@ -22,6 +26,9 @@
         transition: background-color .5s ;
     }
     li:hover {
+        background-color: $bgcolormenuhover;
+    }
+    .active {
         background-color: $bgcolormenuhover;
     }
 }

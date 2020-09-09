@@ -1,14 +1,11 @@
 {
-  "name": "orinoco-backend",
+  "name": "p5",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "https://p5-orinico.netlify.app",
+  "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/style.scss:./css/style.css --style compressed",
-    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/",
-    "build": "webpack",
-    "start": "webpack-dev-server"
+    "sass": "sass --watch ./sass/style.scss:./css/style.css --style expanded",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -16,13 +13,8 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.0",
-    "babel-loader": "^8.1.0",
-    "babel-polyfill": "^6.26.0",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-  }
+  "bugs": {
+    "url": "https://github.com/SeeYouh/P5/issues"
+  },
+  "homepage": "https://github.com/SeeYouh/P5#readme"
 }

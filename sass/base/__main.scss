@@ -1,5 +1,143 @@
-.article-produit {
+/* main {
     width: 100%;
-    min-width: 1024px;
+}
+ */
+.article-produit {
+    width: 90%;
+    max-width: 1300px;
     min-height: 710px;
+    flex-wrap: wrap;
+}
+
+.items {
+    width: 400px;
+    height: 450px;
+    margin: 10px;
+    padding: 0 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //background-color: $bgcolormenu;
+    figure {
+        width:360px;
+        height:200px;
+        border: 1px dashed $bgcolorlogo;
+        img {
+            width: 100%;
+            height: 100%;
+            white-space: nowrap;
+            overflow:hidden;
+            margin: 20px;
+            border: 1px solid $bgcolorlogo;
+        }
+    }
+    .title {
+        margin-top: 20px;
+        padding-left: 20px;
+        font-size: $title;
+        text-transform: uppercase;
+        a {
+            color: $bgcolorlogo2;
+        }
+        a:hover {
+            color: $bgcolorlogo;
+        }
+    }
+    .summary {
+        font-size: $summary;
+        text-align: justify;
+        padding: 0 20px 0 20px;
+    }
+    .shopping {
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        .qty, .signe, .fa-shopping-cart, .add, .price, .btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .number-article, .add, .price, .signe {
+            font-weight: 700;
+        }
+        .btn {
+            background-color: $bgcolorbar;
+        }
+        .qty {
+            width: 100px;
+            overflow: hidden;
+            input {
+                border: none;
+                color: $bgcolorlogo;
+                background-color: transparent;
+                width: 50%;
+                height: auto;
+                line-height: 10px;
+                /* Firefox */
+                -moz-appearance: textfield;
+                /* Chrome */
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin:0;
+                }
+                /* Opéra*/
+                &::-o-inner-spin-button {
+                    -o-appearance: none;
+                    margin: 0; 
+                }
+                
+            }
+            .number-article {
+                text-align: center;
+                font-size: $qty;
+            }
+            .signe {
+                background-color: $bgcolorlogopal;
+                width: 30px;
+                font-size: $signe;
+                padding-bottom: 5px;
+                color: $bgcolorbar;
+                transition: all 0.2s ease-in-out;
+            }
+            input[type="button"]:hover {
+                color: $bgcolorbar;
+                background-color: $bgcolorlogo;
+            }
+        }
+        .btn {
+            width: 150px;
+            text-transform: uppercase;
+            p {
+                width: 100%;
+                height: 100%;
+                color: $bgcolorlogo;
+                background-color: transparent;
+                transition: all 0.3s ease-in-out;    
+            }
+            :hover {
+                background-color: $bgcolorlogo;
+                color: $bgcolorbar;
+            }        
+        }
+        .price {
+            color: $bgcolorlogo;
+            font-size: 1.5em;
+        }
+        .btn, .price, .qty {
+            margin: 0 2px;
+        }
+        .btn, .qty {
+            border: 1px solid $bgcolorlogo;
+        }
+        .qty,.qty .signe, .btn {
+            height: 30px;
+        }
+    }
+    .signe, .btn {
+        cursor: pointer;
+    }
+    .addbutton-label {
+        display: none;
+    }
 }

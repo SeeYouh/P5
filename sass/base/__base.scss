@@ -1,11 +1,13 @@
-.menu-produit, 
+.menu-produit,
+main, 
 footer, 
 .rejoindre, 
 .article-produit, 
 .user, 
 .search,
 .mail-bar,
-.ok-btn-mail {
+.ok-btn-mail,
+.btn p {
     @include disp-row-center;
 }
 

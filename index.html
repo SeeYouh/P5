@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
       rel="stylesheet"
@@ -17,8 +17,8 @@
   <body>
     <header class="header">
       <nav class="bg">
-        <a href="./index.html" class="logo">
-          <img src="./images/Logo Orinoco.png" alt="Logo d'Orinoco" />
+        <a href="/index.html" class="logo">
+          <img src="/images/Logo Orinoco.png" alt="Logo d'Orinoco" />
         </a>
         <div class="search">
           <input
@@ -38,13 +38,12 @@
             <p class="text-s-small pos-rel-bot-large">Identifiez-vous</p>
           </div>
         </a>
-        <a href="#" class="user">
+        <a href="/html/paniers.html" class="user">
           <i class="fas fa-shopping-cart text-xs-medium pos-rel-bot-small"></i>
           <div >
             <p>Panier</p>
             <p class="text-s-small article pos-rel-bot-large">
-              <span class="number-article">0</span>
-              article
+              <span id="total-article" class="number-article">0 article</span>
             </p>
           </div>
         </a>
@@ -52,18 +51,17 @@
       <nav>
         <ul class="bar-menu">
           <li class="menu-produit">
-            <a href="#"> 
+            <a href="/html/produits/jouets.html"> 
               Jouets
             </a>
           </li>
           <li class="menu-produit">
-            <a href="#">
+            <a href="/html/produits/camera.html">
               Caméras
-              <i class="fas fa-chevron-down"></i>
             </a>
           </li>
           <li class="menu-produit">
-            <a href="#">
+            <a href="/html/produits/meubles.html">
               Meubles
             </a>
           </li>
@@ -71,57 +69,9 @@
       </nav>
     </header>
     <main>
-        <div class="article-produit">
-            <div class="item-furniture">
-                <img src="./images/oak_1.jpg" alt="" />
-                <h1 class="title">Oak 1</h1>
-                <div class="summary">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-                  doloribus earum harum commodi voluptatem asperiores. Saepe placeat
-                  fuga culpa quisquam sed, maiores laboriosam aliquam suscipit,
-                  praesentium nostrum nesciunt consectetur accusantium!
-                </div>
-                <div class="shopping">
-                  <div class="qty">
-                    <div class="signe moins">-</div>
-                    <div class="number-article">1</div>
-                    <div class="signe plus">+</div>
-                  </div>
-                    <div class="shop">
-                      <i class="fas fa-shopping-cart"></i>
-                      <p class="add">ajouter</p>
-                    </div>
-                  <div class="price">
-                    <p>199.90€</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item-toys">
-                <img src="./images/teddy_1.jpg" alt="" />
-                <h1 class="title">Teddy 1</h1>
-                <div class="summary">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-                  doloribus earum harum commodi voluptatem asperiores. Saepe placeat
-                  fuga culpa quisquam sed, maiores laboriosam aliquam suscipit,
-                  praesentium nostrum nesciunt consectetur accusantium!
-                </div>
-                <div class="shopping">
-                  <div class="qty">
-                    <div class="signe moins">-</div>
-                    <div class="number-article">1</div>
-                    <div class="signe plus">+</div>
-                  </div>
-                  <div class="shop">
-                    <i class="fas fa-shopping-cart"></i>
-                    <p class="add">ajouter</p>
-                  </div>
-                  <div class="price">
-                    <p>199.90€</p>
-                  </div>
-                </div>
-              </div>        
+        <div id="article-produit" class="article-produit">
         </div>
-    </main>
+      </main>
     <footer>
         <div class="footer">
             <div class="footer1">
@@ -155,7 +105,13 @@
               <a href="#" class="bg-footer fontfooter">Plan du site</a>
             </div>
         </div>
-    </footer>
-    <script type="text/javascript" src="app.js"></script>
+      </footer>
+      <script type="text/javascript" src="/js/variables.js"></script>
+      <script type="text/javascript" src="/js/api.js"></script>
+      <script type="text/javascript" src="/js/function.js"></script>
+      <script type="text/javascript" src="/js/class.js"></script>
+    <script type="text/javascript" src="/js/produits.js"></script>
+    <script type="text/javascript" src="/js/camera.js"></script>
+    <script type="text/javascript" src="/js/article.js"></script>
   </body>
 </html>
